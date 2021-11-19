@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import pygame, sys,random
 import neat
 
@@ -57,7 +55,7 @@ def eval_fitness(generation, config):
     for gid, genome in generation: 
         
         genome.fitness = 0 
-        net = neat.nn.FeedForwardNetwork.create(genome, config) #creating a neural network for a genome
+        net = neat.nn.FeedForwardNetwork.create(genome, config)
         pipe1 = Pipe(250)
         bird1 = Bird() 
         
